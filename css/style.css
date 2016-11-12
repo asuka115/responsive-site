@@ -4,19 +4,12 @@
 html{ font-size: 62.5%; }
 
 #top-h {
-  background-image: url('top.jpg'); 
-  width: 100%;
   height: 500px;
-}
-/* ▼表示領域が769px以上の場合 */
-@media screen and (min-width: 769px) {
-   img.miniimage { display: none; }  /* miniを非表示 */
-   img.bigimage  { display: block; } /* bigを表示 */
-}
-/* ▼表示領域が768ppx未満の場合 */
-@media screen and (max-width: 768px) {
-   img.miniimage { display: block; } /* miniを表示 */
-   img.bigimage  { display: none; }  /* bigを非表示 */
+  background-image: url("../images/top.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 
@@ -135,13 +128,17 @@ section h2
 
 
     
-@media screen and (max-width: 768px) 
-{
-#top-h {
-  background-image: url('top-s.jpg'); 
-  width: 100%;
-  height: 250px;
-}
+/* ▼表示領域が768ppx未満の場合 */
+@media screen and (max-width: 768px) {
+    
+  #top-h{
+    height: 250px;
+    background-image: url("../images/top-s.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 
 #box .container
 {
