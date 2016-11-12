@@ -58,20 +58,19 @@ section h2
 {
     background-color: #fff;
     width: 100%;
+    background-color: #ffefd5;
 }
 #box .container
 {
     display: -webkit-flex;
     display:         flex;
     justify-content: space-between;
-    width: 90%;
 
 }
 
 .m-box
 {
     margin: 0px auto;
-    width: 30%;
     padding: 20px;
 }
 
@@ -146,11 +145,6 @@ section h2
     display:         flex;
     flex-direction: column;
 
-}
-
-.m-box
-{
-    width: 90%;
 }
 
 .m-box1
